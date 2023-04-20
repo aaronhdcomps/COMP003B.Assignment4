@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace COMP003B.Assignment4.Models
 {
-    public class RegFormViewModel
+    public class RegistrationViewModel
     {
         [Required]
         [MaxLength(100)]
@@ -18,7 +18,8 @@ namespace COMP003B.Assignment4.Models
         public string Phone { get; set; }
 
         [Required]
-        public int Age { get; set; }
+        [MaxLength(100)]
+        public string Address { get; set; }
 
     }
 }

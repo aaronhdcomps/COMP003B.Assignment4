@@ -24,20 +24,22 @@ namespace COMP003B.Assignment4.Controllers
         }
 
         [HttpGet]
-        public IActionResult Form() 
+        public IActionResult Register() 
         {
             return View();
         }
 
-        /*[HttpPost]
-        public IActionResult Confirm() 
+        [HttpPost]
+        public IActionResult Confirmation(RegistrationViewModel model) 
         {
             if (!ModelState.IsValid) 
             {
-                return View("Form", model);
+                return View("Register", model);
             }
+
+            return View(model);
         }
-        */
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
