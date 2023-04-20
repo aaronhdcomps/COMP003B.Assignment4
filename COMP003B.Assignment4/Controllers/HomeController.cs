@@ -23,6 +23,22 @@ namespace COMP003B.Assignment4.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Form() 
+        {
+            return View();
+        }
+
+        /*[HttpPost]
+        public IActionResult Confirm() 
+        {
+            if (!ModelState.IsValid) 
+            {
+                return View("Form", model);
+            }
+        }
+        */
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
