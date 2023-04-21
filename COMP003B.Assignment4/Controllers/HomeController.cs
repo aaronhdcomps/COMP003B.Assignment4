@@ -30,14 +30,14 @@ namespace COMP003B.Assignment4.Controllers
         }
 
         [HttpPost]
-        public IActionResult Confirmation(RegistrationViewModel model) 
+        public IActionResult ThankYou(RegistrationViewModel model) 
         {
             if (!ModelState.IsValid) 
             {
                 return View("Register", model);
             }
 
-            return View(model);
+            return View("ThankYou", model);
         }
         
 

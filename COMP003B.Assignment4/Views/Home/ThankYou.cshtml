@@ -1,0 +1,17 @@
+﻿@model COMP003B.Assignment4.Models.RegistrationViewModel
+
+@{
+    ViewData["Title"] = "ThankYou";
+}
+<h2>Thank you for registering!</h2><br>
+<h3>This is the information we have received.</h3>
+<br>
+<ul>
+    <li>Name: @Model.Name</li>
+    <li>Email: @Model.Email</li>
+    <li>Phone: @Model.Phone</li>
+    <li>Address: @Model.Address</li>
+</ul>
+
+<h2>You are all set for Flogfest!</h2><br>
+<h3>We will now proceed to sell your personal data to the highest bidder.</h3>
